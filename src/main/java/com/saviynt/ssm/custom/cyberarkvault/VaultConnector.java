@@ -44,11 +44,11 @@ public class VaultConnector extends VaultConnectorSpecification {
     public static final long serialVersionUID = 1L;
 
     public static void main(String[] args) throws JsonProcessingException, IOException, NoSuchAlgorithmException, KeyStoreException, KeyManagementException, VaultException {
-        VaultInstance vault = new VaultInstance("https://10.9.153.242", false);
-        String username = "iam_cy_poc";
-        String password = "P@ssw0rd";
+        VaultInstance vault = new VaultInstance("https://xxx.xxx.xxx.xxx", false);
+        String username = "xxx";
+        String password = "xxx";
         vault.getAccessToken(username, password);
-        vault.retrieveSecret(vault.getAccountId("iadmadm@KCSIAMPOC02", "TS_Storage"));
+        vault.retrieveSecret(vault.getAccountId("xxxx", "xxx"));
     }
 
     /**
